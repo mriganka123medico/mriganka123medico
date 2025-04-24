@@ -1,0 +1,8 @@
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.filter-btn {
+  margin: 0 5px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ASSAM SILK - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-image: url('images/MUGASILK.png');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+    .hero-text {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .product-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">ASSAM SILK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Catalog</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-text text-center">
+    <h1 class="display-4 fw-bold">Elegance in Every Thread</h1>
+    <p class="lead">Explore our collection of traditional and designer Assam Silk.</p>
+    <a href="products.html" class="btn btn-warning mt-3">Shop Now</a>
+  </div>
+</section>
+
+<!-- Product Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Featured Sarees</h2>
+  <div class="row g-4">
+
+    <!-- Product 1 -->
+    <div class="col-md-4">
+      <form action="cart.php" method="POST">
+        <div class="card product-card shadow-sm">
+          <img src="images/mugasilk.png" class="card-img-top" alt="Muga Silk Saree">
+          <div class="card-body">
+            <h5 class="card-title">Muga Silk</h5>
+            <p class="card-text text-muted">Elegant and rich traditional look</p>
+            <p class="fw-bold">₹25,499</p>
+            <input type="hidden" name="product_name" value="Muga Silk">
+            <input type="hidden" name="product_price" value="25499">
+            <button type="submit" name="add_to_cart" class="btn btn-outline-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-md-4">
+      <form action="cart.php" method="POST">
+        <div class="card product-card shadow-sm">
+          <img src="images/assamsilk1.jpg" class="card-img-top" alt="Assam Silk Saree">
+          <div class="card-body">
+            <h5 class="card-title">Assam Silk</h5>
+            <p class="card-text text-muted">Silken beauty with golden zari</p>
+            <p class="fw-bold">₹13,199</p>
+            <input type="hidden" name="product_name" value="Assam Silk">
+            <input type="hidden" name="product_price" value="13199">
+            <button type="submit" name="add_to_cart" class="btn btn-outline-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-md-4">
+      <form action="cart.php" method="POST">
+        <div class="card product-card shadow-sm">
+          <img src="images/mising.jpg" class="card-img-top" alt="Mising Chador Saree">
+          <div class="card-body">
+            <h5 class="card-title">Mising Chador</h5>
+            <p class="card-text text-muted">Lightweight and stylish design</p>
+            <p class="fw-bold">₹1,299</p>
+            <input type="hidden" name="product_name" value="Mising Chador">
+            <input type="hidden" name="product_price" value="1299">
+            <button type="submit" name="add_to_cart" class="btn btn-outline-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Assam Sarees. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
